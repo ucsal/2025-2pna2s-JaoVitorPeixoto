@@ -7,7 +7,6 @@ public class Item {
 	private int quantity;
 	
 	public Item(String name, double unitPrice, int quantity) {
-		super();
 		this.name = name;
 		this.unitPrice = unitPrice;
 		this.quantity = quantity;
