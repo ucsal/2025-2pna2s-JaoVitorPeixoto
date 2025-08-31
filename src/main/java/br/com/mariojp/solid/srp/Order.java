@@ -1,16 +1,17 @@
 package br.com.mariojp.solid.srp;
-
 import java.util.ArrayList;
 import java.util.List;
 
-public class Order {
-	private final List<Item> items = new ArrayList<>();
+import br.com.mariojp.solid.srp.Interfaces.*;
 
-	public void add(Item i) {
+public class Order implements Orderable{
+	private final List<Itemable> items = new ArrayList<>();
+
+	public void add(Itemable i) {
 		items.add(i);
 	}
 
-	public List<Item> getItems() {
+	public List<Itemable> getItems() {
 		return items;
 	}
 }
