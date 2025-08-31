@@ -1,6 +1,8 @@
 package br.com.mariojp.solid.srp;
 
-public class Item {
+import br.com.mariojp.solid.srp.Interfaces.Itemable;
+
+public class Item implements Itemable{
 	
 	private String name;
 	private double unitPrice; 
